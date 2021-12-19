@@ -2,3 +2,25 @@
     text-align: center;
     background-image: url(images/pizzageneral.jpg);
 }
+.Cripsy{
+    text-align: center;
+
+}
+.Crips{
+    display: flex;
+    justify-content: space-around;
+}
+.Gluten{
+    text-align: center;
+}
+.Glut{
+    display: flex;
+    justify-content: space-around;
+}
+.Stuffed{
+    text-align: center;
+}
+.Stuff{
+    display: flex;
+    justify-content: space-around;
+}
