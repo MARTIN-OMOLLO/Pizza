@@ -105,27 +105,104 @@
        <p>Ksh.100</p>
      <button>Add to your order</button>
     </div>
-    <!-- <div class="Tone">
-        <img src="images/pizza topping.jpg" height="120px">
-         <p>Ksh. 70</p>
-         <button>Add to your order</button>
-         </div>
-          <div class="Ttwo">
-          <img src="images/pizzatopping2.jpg" height="130px">
-          <p>Ksh. 70</p>
-          <button>Add to your order</button>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="form-all">
+        <h1>ORDER HERE</h1>
+        <form class="form1">
+          <label for="select">Choose the flavor</label>
+          <select class="browser-default custom-select custom-select-md mb-3 name" >
+            <option value="Chicago Pizza">Chicago Pizza</option>
+            <option value="Greek Pizza">Greek Pizza</option>
+            <option value="Detroit Pizza">Detroit Pizza</option>
+            <option value="Sicilian Pizza">Sicilian Pizza</option>
+            <option value="St. Louis Pizza">St. Louis Pizza</option>
+            <option value="Neopolitan Pizza">Neopolitan Pizza</option>
+          </select>
+          <label for="select">Choose the size</label>
+          <select class="browser-default custom-select custom-select-md mb-3"id="sizes">
+            <option selected value="0">Select size here</option>
+            <option value="large">Large -- sh. 1500</option>
+            <option value="medium">Medium -- sh. 900</option>
+            <option value="small">Small -- sh. 500</option>
+          </select>
+          <label for="ppcrust">Choose the Crust!</label>
+          <select class="browser-default custom-select custom-select-md mb-3"id="ppcrust">
+            <option selected value="0">Select your preferred crust!</option>
+            <option value="Crispy">Crispy -- ksh. 70</option>
+            <option value="Crunchy">Crunchy -- ksh. 100</option>
+            <option value="Vegan">Munchy-- ksh. 250</option>
+          </select>
+          <label for="Toppings">Select Your Toppings each at ksh. 100</label><br />
+          <div class="custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox"class="custom-control-input"id="Ham"value="Ham" name="toppings"/>
+            <label class="custom-control-label" for="Ham">Ham</label>
           </div>
-          <div class="Tthree">
-          <img src="images/pizza topping3.jpg" height="100px">
-          <p>Ksh.100</p>
-          <button>Add to your order</button>
+          <div class="custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox"class="custom-control-input"id="Onions"value="Onions" name="toppings"/>
+            <label class="custom-control-label" for="Onions">Onions</label>
           </div>
-          <div class="Tfour">
-          <img src="images/pizaatopping4.jpg" height="110px">
-         <p>Ksh.100</p>
-       <button>Add to your order</button>
-      </div>
-     -->
+          <div class="custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox"class="custom-control-input"id="Tomatoes" value="Tomatoes" name="toppings"/>
+            <label class="custom-control-label" for="Tomatoes">Tomatoes</label>
+          </div>
+          <br />
+          <br />
+          <button type="submit" class="btn btn-blue proceed">Order</button>
+        </form>
+        <div class="col-sm-7">
+          <div id="info">
+            <p>Your order will be processed and delivered within 1 hour.</p>
+            <p>Have exact cash ready to pay your rider.</p>
+            <p>Reach out to us in case of any changes</p>
+            <p id="final">Your Pizza</p>
+          </div>
+          <div class="details">
+            <h2>Your Order is:</h2>
+            <div id="orders">
+              <table class="table table-sm pizzatable">
+                <thead>
+                  <tr>
+                    <th scope="col">Pizza Name</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Crust</th>
+                    <th scope="col">Topping</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody id="ordersmade">
+                  <tr>
+                    <td id="ppname"></td>
+                    <td id="ppsize"></td>
+                    <td id="crust"></td>
+                    <td id="topping"></td>
+                    <td id="totals"></td>
+                   </tr>
+                     </tbody>
+                    </table>
+                        <p id="total"></p>
+                        <p id="bill"></p>
+                        <p id="tprice">Delivery fee is 100</p>
+                        <p id="message"></p>
+                    </div>
+                            <button class="btn btn-blue otherPizza">Want another pizza? Add here </button>
+                            <button class="btn btn-blue" id="checkout">Checkout</button>
+                            <button class="btn btn-blue delivers">Home delivery?</button>
+                    </div>
+                         <div class="delivery">
+                             <form>
+                                 <div class="form-group">
+                                    <input type="text"id="yourname"class="form-control mb-3"placeholder="Your Name"/>
+                                     <input type="number" id="phone" class="form-control mb-3"  placeholder="Pnone Number" />
+                                     <input type="text" id="whereto" class="form-control mb-3" placeholder="Delivery Location"/>
+                                     <button class="btn btn-orange" id="finaleorder"> Place Your Order </button>
+                                 </div>
+                            </form>
+                        </div>
+                    </div>
     </div>   
 </div>
 <!-- <form class="End">
