@@ -40,13 +40,13 @@ $(document).ready(function(){
         crust_price = 0;
       break;
       case "Crispy":
-        crust_price = 700;
-      break;
-      case "Crunchy":
         crust_price = 70;
       break;
-      case "Munchy":
-        crust_price = 180;
+      case "Gluten":
+        crust_price = 70;
+      break;
+      case "Stuffed":
+        crust_price = 100;
       break;
       default:
         console.log("No price");
@@ -63,7 +63,7 @@ $(document).ready(function(){
     else{
       $("button.proceed").hide();
       $("#info").hide();
-      $("div.details").slideDown(1000);
+      $("div.details").slideDown(900);
     }
     totals = price + crust_price + topping_value;
     console.log(totals);
@@ -108,10 +108,10 @@ $(document).ready(function(){
           case "Crispy":
             crust_price = 70;
           break;
-          case "Crunchy":
+          case "Gluten":
             crust_price = 70;
           break;
-          case "Munchy":
+          case "Stuffed":
             crust_price = 100;
           break;
           default:
@@ -130,19 +130,19 @@ $(document).ready(function(){
     $("button#checkout").click(function(){
       $("button#checkout").hide();
       $("button.otherPizza").hide();
-      $("button.delivers").slideDown(1000);
-      $("#tprice").slideDown(1000);
+      $("button.delivers").slideDown(900);
+      $("#tprice").slideDown(900);
       console.log("Your total bill is ksh. "+checkoutTotal);
       $("#total").append("Your bill is ksh. "+checkoutTotal);
     });
     $("button.delivers").click(function(){
       $(".pizzatable").hide();
       $(".details h2").hide();
-      $(".deliver").slideDown(1000);
+      $(".deliver").slideDown(900);
       $("#tprice").hide();
       $("button.delivers").hide();
       $("#totals").hide();
-      let deliveryAmount= checkoutTotal+100;
+      let deliveryAmount= checkoutTotal+200;
       console.log("You will pay ksh. "+deliveryAmount+" on delivery");
       $("#bill").append("Your bill plus delivery fee is: "+deliveryAmount);
     });
@@ -159,7 +159,7 @@ $(document).ready(function(){
       if ($("input#whereto").val() && $("input#phone").val() && $("input#yourname").val() !=""){
         $("#message").append(person+", Your order has been received and will be delivered to "+location+ ". Please prepare ksh. "+totals);
         $("#bill").hide();
-        $("#message").slideDown(1000);
+        $("#message").slideDown(900);
       }
       else {
         alert("Fill in the delivery location!");
